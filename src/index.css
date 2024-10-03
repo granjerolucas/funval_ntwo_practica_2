@@ -1,7 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-  font-family: 'Poppins', sans-serif;
-}
