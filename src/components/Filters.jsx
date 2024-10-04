@@ -80,7 +80,7 @@ export const Filters = ({ onChangeLoading }) => {
   }, [fnGetImagesByTag, fnGetImagesByText, getRecentsImages, params]);
 
   return (
-    <div className="flex flex-col gap-y-8 items-center justify-center overflow-y-auto">
+    <div className="flex flex-col gap-y-8 items-center justify-center ">
       <form className="min-w-[25rem] mx-auto" onSubmit={fnOnClick}>
         <div className="relative">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div>
@@ -115,7 +115,7 @@ export const Filters = ({ onChangeLoading }) => {
         </div>
       </form>
 
-      <div className="flex gap-2">
+      <div className="flex gap-2 overflow-y-auto">
         <ButtonsLink href={baseUrl()} label={"Recents"} />
         {tags.map((item) => {
           const href = baseUrl(`?tag=${item._content}`);
